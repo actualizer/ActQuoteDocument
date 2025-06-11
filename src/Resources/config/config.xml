@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title lang="de-DE">Grundeinstellungen</title>
+        <title lang="en-GB">Basic settings</title>
+        
+        <input-field type="int">
+            <name>quoteDurationDays</name>
+            <label lang="de-DE">Angebotsdauer in Tagen</label>
+            <label lang="en-GB">Quote validity in days</label>
+            <helpText lang="de-DE">Wie viele Tage soll ein Angebot standardmäßig gültig sein?</helpText>
+            <helpText lang="en-GB">How many days should a quote be valid by default?</helpText>
+            <defaultValue>30</defaultValue>
+            <min>1</min>
+            <max>365</max>
+        </input-field>
+    </card>
+</config>

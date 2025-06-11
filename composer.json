@@ -1,0 +1,25 @@
+{
+    "name": "act/quote-document",
+    "description": "Actualize: Quote Document - Adds quote document type with number range",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Act\\QuoteDocument\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": ">=6.6"
+    },
+    "extra": {
+        "shopware-plugin-class": "Act\\QuoteDocument\\ActQuoteDocument",
+        "label": {
+            "de-DE": "Actualize: Angebotsdokument",
+            "en-GB": "Actualize: Quote Document"
+        },
+        "description": {
+            "de-DE": "Fügt einen neuen Dokumententyp 'Angebot' mit eigenem Nummernkreis hinzu",
+            "en-GB": "Adds a new document type 'Quote' with its own number range"
+        }
+    }
+}

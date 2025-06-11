@@ -1,0 +1,5 @@
+{
+    "act_quote_title": "Angebot %quoteNumber%",
+    "act_quote_headline": "Angebot %quoteNumber%",
+    "act_quote_validUntil": "Gültig bis: %validUntil%"
+}

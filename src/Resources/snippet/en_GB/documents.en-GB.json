@@ -1,0 +1,5 @@
+{
+    "act_quote_title": "Quote %quoteNumber%",
+    "act_quote_headline": "Quote %quoteNumber%",
+    "act_quote_validUntil": "Valid until: %validUntil%"
+}

@@ -1,0 +1,37 @@
+{% sw_extends '@Framework/documents/base.html.twig' %}
+
+{% block document_title_tag %}
+    {% trans with {'%quoteNumber%': config.custom.quoteNumber ?? config.documentNumber} %}act_quote_title{% endtrans %}
+{% endblock %}
+
+{% block document_headline %}
+    <h1 class="headline" tabindex="0">
+        {% trans with {'%quoteNumber%': config.custom.quoteNumber ?? config.documentNumber} %}act_quote_headline{% endtrans %}
+    </h1>
+{% endblock %}
+
+{% block document_side_info_contents %}
+    {% block document_side_info_customer_number %}
+    <tr>
+        <td>
+            {{ 'document.customerNumber'|trans({'%customerNumber%': customer.customerNumber})|sw_sanitize }}
+        </td>
+    </tr>
+{% endblock %}
+
+{% block document_side_info_order_number %}{% endblock %}
+
+{% block document_side_info_order_date %}{% endblock %}
+
+{% block document_side_info_date %}
+    <tr>
+        <td>
+            {{ 'document.date'|trans({'%date%': config.documentDate|format_date('medium', locale=locale)})|sw_sanitize }}
+        </td>
+    </tr>
+{% endblock %}
+    <tr><td>{% trans with {'%validUntil%': config.documentDate|date_modify('+' ~ config.custom.quoteDurationDays ~ ' days')|format_date('medium', locale=order.language.locale.code)} %}act_quote_validUntil{% endtrans %}</td></tr>
+{% endblock %}
+
+{% block payment_shipping %}{% endblock %}
+{% block comment %}{% endblock %}
