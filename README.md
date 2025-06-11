@@ -100,6 +100,7 @@ The template extends Shopware's base document template and inherits all standard
 ActQuoteDocument/
 ├── composer.json
 ├── README.md
+├── LICENSE
 ├── src/
 │   ├── ActQuoteDocument.php
 │   ├── Migration/
@@ -136,7 +137,7 @@ The plugin creates entries in the following tables:
 ### Safety Features
 
 - **Installation Safety**: Checks if quote document type already exists before creating
-- **Uninstallation Safety**: 
+- **Uninstallation Safety**:
   - Keeps data by default when uninstalling
   - Checks for existing quote documents before removing configuration
   - Never deletes actual quote documents
