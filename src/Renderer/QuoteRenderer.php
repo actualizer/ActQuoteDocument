@@ -155,9 +155,16 @@ class QuoteRenderer extends AbstractDocumentRenderer
                         $config->jsonSerialize(),
                     );
 
-                    $doc->setTemplate($template);
-                    $doc->setOrder($order);
-                    $doc->setContext($newContext);
+                    // These methods may not exist in all Shopware versions
+                    if (method_exists($doc, 'setTemplate')) {
+                        $doc->setTemplate($template);
+                    }
+                    if (method_exists($doc, 'setOrder')) {
+                        $doc->setOrder($order);
+                    }
+                    if (method_exists($doc, 'setContext')) {
+                        $doc->setContext($newContext);
+                    }
 
                     $result->addSuccess($orderId, $doc);
                 } catch (\Throwable $exception) {
