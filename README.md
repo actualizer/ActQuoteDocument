@@ -177,7 +177,7 @@ For issues and feature requests, please use the GitHub issue tracker.
 
 ## License
 
-This plugin is proprietary software. Please refer to the LICENSE file for details.
+This plugin is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
 
