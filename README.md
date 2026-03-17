@@ -4,17 +4,17 @@ This plugin adds a new document type "Quote" (German: "Angebot") to your Shopwar
 
 ## Features
 
-- ✅ **New Document Type**: Adds "Quote" as a fully integrated document type
-- ✅ **Dedicated Number Range**: Separate number sequence for quotes (starting at 1000)
-- ✅ **Configurable Validity**: Set quote validity period via plugin configuration
-- ✅ **Multi-language Support**: Full support for German and English
-- ✅ **Customizable Text**: All texts manageable via Shopware's text module system
-- ✅ **Professional Templates**: Based on Shopware's standard document templates
-- ✅ **Safe Installation/Uninstallation**: No data loss, existing documents are protected
+- **New Document Type**: Adds "Quote" as a fully integrated document type
+- **Dedicated Number Range**: Separate number sequence for quotes (starting at 1000)
+- **Configurable Validity**: Set quote validity period via plugin configuration
+- **Multi-language Support**: Full support for German and English
+- **Customizable Text**: All texts manageable via Shopware's text module system
+- **Professional Templates**: Based on Shopware's standard document templates
+- **Safe Installation/Uninstallation**: No data loss, existing documents are protected
 
 ## Requirements
 
-- Shopware 6.6.0 or higher
+- Shopware >=6.6 <6.8
 - PHP 8.3 or higher
 
 ## Installation
@@ -103,6 +103,9 @@ ActQuoteDocument/
 ├── LICENSE
 ├── src/
 │   ├── ActQuoteDocument.php
+│   ├── Document/
+│   │   └── DocumentGenerator/
+│   │       └── QuoteGenerator.php
 │   ├── Migration/
 │   │   └── Migration1736339000CreateQuoteDocument.php
 │   ├── Renderer/
@@ -110,6 +113,7 @@ ActQuoteDocument/
 │   └── Resources/
 │       ├── config/
 │       │   ├── config.xml
+│       │   ├── plugin.png
 │       │   └── services.xml
 │       ├── snippet/
 │       │   ├── de_DE/
