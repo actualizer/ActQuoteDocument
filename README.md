@@ -94,37 +94,6 @@ The template extends Shopware's base document template and inherits all standard
 
 ## Technical Details
 
-### File Structure
-
-```
-ActQuoteDocument/
-├── composer.json
-├── README.md
-├── LICENSE
-├── src/
-│   ├── ActQuoteDocument.php
-│   ├── Document/
-│   │   └── DocumentGenerator/
-│   │       └── QuoteGenerator.php
-│   ├── Migration/
-│   │   └── Migration1736339000CreateQuoteDocument.php
-│   ├── Renderer/
-│   │   └── QuoteRenderer.php
-│   └── Resources/
-│       ├── config/
-│       │   ├── config.xml
-│       │   ├── plugin.png
-│       │   └── services.xml
-│       ├── snippet/
-│       │   ├── de_DE/
-│       │   │   └── documents.de-DE.json
-│       │   └── en_GB/
-│       │       └── documents.en-GB.json
-│       └── views/
-│           └── documents/
-│               └── quote.html.twig
-```
-
 ### Database Tables Affected
 
 The plugin creates entries in the following tables:
