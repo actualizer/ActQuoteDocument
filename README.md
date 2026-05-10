@@ -14,7 +14,7 @@ This plugin adds a new document type "Quote" (German: "Angebot") to your Shopwar
 
 ## Requirements
 
-- Shopware >=6.6 <6.8
+- Shopware >=6.7 <6.8
 - PHP 8.3 or higher
 
 ## Installation
