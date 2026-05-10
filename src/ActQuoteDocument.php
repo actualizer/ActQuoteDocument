@@ -24,8 +24,13 @@ class ActQuoteDocument extends Plugin
         }
         
         // Only delete data if user explicitly wants to remove all data
+        $container = $this->container;
+        if ($container === null) {
+            return;
+        }
+
         /** @var Connection $connection */
-        $connection = $this->container->get(Connection::class);
+        $connection = $container->get(Connection::class);
         $this->removeQuoteDocumentData($connection);
     }
     

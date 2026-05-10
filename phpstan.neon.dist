@@ -1,0 +1,13 @@
+parameters:
+    level: 8
+    paths:
+        - src/
+    excludePaths:
+        - src/Migration/*
+    ignoreErrors:
+        # Matches the vendor InvoiceRenderer pattern: chunked per-language search and
+        # per-order createVersion are intentional and not N:1 (one search per language,
+        # createVersion must run per order to mint a unique version UUID).
+        -
+            identifier: shopware.noEntityRepositoryInLoop
+            path: src/Renderer/QuoteRenderer.php

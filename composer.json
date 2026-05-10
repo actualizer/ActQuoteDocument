@@ -2,15 +2,23 @@
     "name": "act/quote-document",
     "description": "Actualize: Quote Document - Adds quote document type with number range",
     "type": "shopware-platform-plugin",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Actualize",
+            "email": "plugin@actualize.de",
+            "homepage": "https://actualize.de",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Act\\QuoteDocument\\": "src/"
         }
     },
     "require": {
-        "shopware/core": ">=6.6 <6.8",
+        "shopware/core": ">=6.7 <6.8",
         "php": ">=8.3"
     },
     "extra": {
@@ -20,8 +28,20 @@
             "en-GB": "Actualize: Quote Document"
         },
         "description": {
-            "de-DE": "Fügt einen neuen Dokumententyp 'Angebot' mit eigenem Nummernkreis hinzu",
-            "en-GB": "Adds a new document type 'Quote' with its own number range"
+            "de-DE": "Fügt einen neuen Dokumententyp 'Angebot' mit eigenem Nummernkreis und PDF-Template hinzu. Ermöglicht die Erstellung von Angebotsdokumenten direkt aus Bestellungen heraus.",
+            "en-GB": "Adds a new document type 'Quote' with its own number range and PDF template. Allows the creation of quote documents directly from existing orders in the admin."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://actualize.de",
+            "en-GB": "https://actualize.de"
+        },
+        "supportLink": {
+            "de-DE": "https://actualize.de",
+            "en-GB": "https://actualize.de"
         }
+    },
+    "scripts": {
+        "format": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension format /ext",
+        "check": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension validate --full /ext"
     }
 }
