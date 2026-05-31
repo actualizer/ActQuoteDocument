@@ -19,6 +19,15 @@ This plugin adds a new document type "Quote" (German: "Angebot") to your Shopwar
 
 ## Installation
 
+### Via Composer (recommended)
+
+```bash
+composer require actualizer/quote-document
+bin/console plugin:refresh
+bin/console plugin:install --activate ActQuoteDocument
+bin/console cache:clear
+```
+
 ### Manual Installation
 
 1. Copy the plugin folder to `custom/plugins/ActQuoteDocument`

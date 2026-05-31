@@ -1,8 +1,8 @@
 {
-    "name": "act/quote-document",
+    "name": "actualizer/quote-document",
     "description": "Actualize: Quote Document - Adds quote document type with number range",
     "type": "shopware-platform-plugin",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "MIT",
     "authors": [
         {
