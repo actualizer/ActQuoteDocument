@@ -16,3 +16,6 @@ parameters:
         -
             identifier: shopware.noEntityRepositoryInLoop
             path: src/Renderer/QuoteRenderer.php
+    # The shopware.* rules only exist in shopware-cli's bundled PHPStan, not in
+    # the project-root vendor PHPStan, so the ignore above is unmatched locally.
+    reportUnmatchedIgnoredErrors: false
