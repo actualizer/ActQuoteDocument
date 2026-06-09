@@ -42,7 +42,7 @@ bin/console cache:clear
 
 ```bash
 cd custom/plugins
-git clone [repository-url] ActQuoteDocument
+git clone git@github.com:actualizer/ActQuoteDocument.git ActQuoteDocument
 cd ../..
 bin/console plugin:refresh
 bin/console plugin:install --activate ActQuoteDocument
