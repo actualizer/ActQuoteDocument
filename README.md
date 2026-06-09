@@ -53,7 +53,7 @@ bin/console cache:clear
 
 ### Plugin Settings
 
-Navigate to **Extensions → My Extensions → ActQuoteDocument** in your admin panel:
+Navigate to **Extensions → My Extensions → Actualize: Quote Document** (German: "Actualize: Angebotsdokument") in your admin panel:
 
 - **Quote validity in days**: Set how many days a quote should be valid (default: 30 days)
 
@@ -88,10 +88,11 @@ All texts can be customized via Shopware's text module system:
 
 ### Customizing the Template
 
-The quote template can be customized by overriding it in your theme:
+The quote template can be customized by overriding it in your own plugin or theme.
+Theme and plugin folders both live in `custom/plugins/`, so place the override at:
 
 ```
-themes/YourTheme/views/documents/quote.html.twig
+custom/plugins/YourTheme/src/Resources/views/documents/quote.html.twig
 ```
 
 The template extends Shopware's base document template and inherits all standard features like:
