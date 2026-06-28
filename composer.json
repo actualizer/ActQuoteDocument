@@ -2,7 +2,7 @@
     "name": "actualizer/quote-document",
     "description": "Actualize: Quote Document - Adds quote document type with number range",
     "type": "shopware-platform-plugin",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +19,7 @@
     },
     "require": {
         "shopware/core": ">=6.7 <6.8",
-        "php": ">=8.3"
+        "php": ">=8.4"
     },
     "extra": {
         "shopware-plugin-class": "Act\\QuoteDocument\\ActQuoteDocument",
