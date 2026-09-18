@@ -2,7 +2,7 @@
     "name": "actualizer/quote-document",
     "description": "Actualize: Quote Document - Adds quote document type with number range",
     "type": "shopware-platform-plugin",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "license": "MIT",
     "authors": [
         {
@@ -36,8 +36,8 @@
             "en-GB": "https://actualize.de"
         },
         "supportLink": {
-            "de-DE": "https://actualize.de",
-            "en-GB": "https://actualize.de"
+            "de-DE": "https://github.com/actualizer/ActQuoteDocument/issues",
+            "en-GB": "https://github.com/actualizer/ActQuoteDocument/issues"
         }
     },
     "scripts": {

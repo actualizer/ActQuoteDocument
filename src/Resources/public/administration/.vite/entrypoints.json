@@ -1,0 +1,25 @@
+{
+  "base": "/bundles/actquotedocument/administration/",
+  "entryPoints": {
+    "act-quote-document": {
+      "css": [
+        "/bundles/actquotedocument/administration/assets/act-quote-document-aoC0WVgF.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/bundles/actquotedocument/administration/assets/act-quote-document-Dee126L1.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}

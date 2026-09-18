@@ -1,0 +1,18 @@
+{
+    "act-quote-document": {
+        "settings": {
+            "info": {
+                "howTo": {
+                    "title": "How it works",
+                    "item1": "A quote is created from an order: open the order, tab <strong>Documents</strong>, <strong>Create new document</strong> and choose the type “Quote”.",
+                    "item2": "The “Valid until” date on the quote is the document date plus <strong>Quote validity in days</strong>. The value can be set differently per sales channel.",
+                    "item3": "Quotes have their own number range “Quotes” under <strong>Settings &gt; General &gt; Number ranges</strong>.",
+                    "item4": "Title, headline and the “Valid until” line are snippets and can be adjusted under <strong>Settings &gt; Localisation &gt; Snippets</strong> (search for “act_quote”).",
+                    "item5": "Logo, sender and footer come from the document template of type “Quote” (name “quote”) under <strong>Settings &gt; Commerce &gt; Documents</strong>."
+                },
+                "description": "Adds a new document type “Quote” with its own number range and PDF template. Allows the creation of quote documents directly from existing orders in the admin.",
+                "issues": "Problems or feature requests?"
+            }
+        }
+    }
+}

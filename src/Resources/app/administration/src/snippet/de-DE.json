@@ -1,0 +1,18 @@
+{
+    "act-quote-document": {
+        "settings": {
+            "info": {
+                "howTo": {
+                    "title": "So funktioniert's",
+                    "item1": "Ein Angebot entsteht aus einer Bestellung: Bestellung öffnen, Reiter <strong>Dokumente</strong>, <strong>Neues Dokument erstellen</strong> und den Typ „Angebot“ wählen.",
+                    "item2": "Das Datum „Gültig bis“ im Angebot ergibt sich aus dem Dokumentdatum plus <strong>Angebotsdauer in Tagen</strong>. Der Wert lässt sich je Verkaufskanal unterschiedlich setzen.",
+                    "item3": "Angebote haben einen eigenen Nummernkreis „Angebote“ unter <strong>Einstellungen &gt; Allgemein &gt; Nummernkreise</strong>.",
+                    "item4": "Titel, Überschrift und die Zeile „Gültig bis“ sind Textbausteine und lassen sich unter <strong>Einstellungen &gt; Regional &gt; Textbausteine</strong> anpassen (Suche nach „act_quote“).",
+                    "item5": "Logo, Absender und Fußzeile kommen aus der Dokumentvorlage vom Typ „Angebot“ (Name „quote“) unter <strong>Einstellungen &gt; Handel &gt; Dokumente</strong>."
+                },
+                "description": "Fügt einen neuen Dokumententyp „Angebot“ mit eigenem Nummernkreis und PDF-Template hinzu. Ermöglicht die Erstellung von Angebotsdokumenten direkt aus Bestellungen heraus.",
+                "issues": "Probleme oder Feature-Wünsche?"
+            }
+        }
+    }
+}

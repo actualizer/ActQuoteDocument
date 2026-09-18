@@ -1,0 +1,11 @@
+{
+  "main.js": {
+    "file": "assets/act-quote-document-Dee126L1.js",
+    "name": "act-quote-document",
+    "src": "main.js",
+    "isEntry": true,
+    "css": [
+      "assets/act-quote-document-aoC0WVgF.css"
+    ]
+  }
+}
