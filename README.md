@@ -87,6 +87,8 @@ All texts can be customized via Shopware's text module system:
 5. Select "Quote" as document type
 6. Generate the document
 
+A comment entered in the dialog is printed below the line items.
+
 ### Customizing the Template
 
 The quote template can be customized by overriding it in your own plugin or theme.
