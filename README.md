@@ -64,6 +64,7 @@ The plugin automatically creates a number range for quotes:
 - Look for "Quotes" / "Angebote"
 - Default pattern: Sequential numbering starting at 1000
 - Can be customized per sales channel
+- The range is global, so sales channels created after the installation use it without a separate assignment
 
 ### Text Customization
 
