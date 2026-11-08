@@ -63,7 +63,10 @@ class QuoteRenderer extends AbstractDocumentRenderer
             $criteria = OrderDocumentCriteriaFactory::create(\explode(',', (string) $chunkIds), $rendererConfig->deepLinkCode, self::TYPE);
 
             $context = $context->assign([
-                'languageIdChain' => \array_values(\array_unique(\array_filter([$languageId, ...$languageIdChain]))),
+                'languageIdChain' => \array_values(\array_unique(\array_filter(
+                    [$languageId, ...$languageIdChain],
+                    static fn (mixed $id): bool => $id !== null && $id !== ''
+                ))),
             ]);
 
             $orders = $this->orderRepository->search($criteria, $context)->getEntities();
@@ -83,14 +86,20 @@ class QuoteRenderer extends AbstractDocumentRenderer
 
                     $config->merge($operation->getConfig());
 
-                    $number = $config->getDocumentNumber() ?: $this->getNumber($context, $order, $operation);
+                    $number = $config->getDocumentNumber();
+                    if ($number === null || $number === '') {
+                        $number = $this->getNumber($context, $order, $operation);
+                    }
 
                     $now = (new \DateTime())->format(Defaults::STORAGE_DATE_TIME_FORMAT);
 
                     $quoteDurationDays = $this->systemConfigService->getInt(
                         'ActQuoteDocument.config.quoteDurationDays',
                         $order->getSalesChannelId()
-                    ) ?: 30;
+                    );
+                    if ($quoteDurationDays === 0) {
+                        $quoteDurationDays = 30;
+                    }
 
                     $config->merge([
                         'documentDate' => $operation->getConfig()['documentDate'] ?? $now,
