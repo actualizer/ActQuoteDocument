@@ -2,6 +2,11 @@
 
 This plugin adds a new document type "Quote" (German: "Angebot") to your Shopware 6 installation, complete with its own number range and customizable validity period.
 
+## Requirements
+
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
+- PHP 8.4 or higher
+
 ## Features
 
 - **New Document Type**: Adds "Quote" as a fully integrated document type
@@ -11,11 +16,6 @@ This plugin adds a new document type "Quote" (German: "Angebot") to your Shopwar
 - **Customizable Text**: All texts manageable via Shopware's text module system
 - **Professional Templates**: Based on Shopware's standard document templates
 - **Safe Installation/Uninstallation**: No data loss, existing documents are protected
-
-## Requirements
-
-- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
-- PHP 8.4 or higher
 
 ## Installation
 
