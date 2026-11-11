@@ -18,7 +18,7 @@ use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\Plugin\Exception\DecorationPatternException;
-use Shopware\Core\System\NumberRange\ValueGenerator\AbstractNumberRangeValueGenerator;
+use Shopware\Core\System\NumberRange\ValueGenerator\NumberRangeValueGeneratorInterface;
 use Shopware\Core\System\SystemConfig\SystemConfigService;
 
 class QuoteRenderer extends AbstractDocumentRenderer
@@ -31,7 +31,8 @@ class QuoteRenderer extends AbstractDocumentRenderer
     public function __construct(
         private readonly EntityRepository $orderRepository,
         private readonly DocumentConfigLoader $documentConfigLoader,
-        private readonly AbstractNumberRangeValueGenerator $numberRangeValueGenerator,
+        // AbstractNumberRangeValueGenerator only exists from Shopware 6.7.12.0 on.
+        private readonly NumberRangeValueGeneratorInterface $numberRangeValueGenerator,
         private readonly Connection $connection,
         private readonly DocumentFileRendererRegistry $fileRendererRegistry,
         private readonly SystemConfigService $systemConfigService,
